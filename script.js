@@ -20,6 +20,14 @@ function visProdukt(produkt) {
     var klon = document.querySelector("#produkt_template").content.cloneNode(true);
 
     //indsæt data ind i klonen
+    klon.querySelector(".data_navn").innerHTML = produkt.navn;
+    klon.querySelector(".data_pris").innerHTML = produkt.pris;
+
+
+    // regn rabatpris
+    var rabatpris = Math.ceil(produkt.pris - (produkt.pris * produkt.rabatsats / 100));
+    klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
+
 
     //append klon til .produkt_liste
     document.querySelector(".produkt_liste").appendChild(klon);
