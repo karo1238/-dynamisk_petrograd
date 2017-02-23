@@ -32,6 +32,17 @@ function visProdukt(produkt) {
     // skift billede
     klon.querySelector(".data_billede").src = "/images/small/" + produkt.billede + "-sm.jpg";
 
+    // udsolgt produkt - at fjerne teksten hvis retten ikke er udsolgt
+    if (produkt.udsolgt == false) {
+        //produktet er ikke udsolgt
+        //udsolgttekst skal fjernes
+        var udsolgttekst = klon.querySelector(".udsolgttekst");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+    } else {
+        //sæt streg over prisen, når produktet er udsolgt
+        klon.querySelector(".pris").classList.add("udsolgt");
+    }
+
     //append klon til .produkt_liste
     document.querySelector(".produkt_liste").appendChild(klon);
 }
