@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Petrograd</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--//* Nav-bar *//-->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid menu">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#forret">Forret</a></li>
+                    <li><a href="#hovedret">Hovedret</a></li>
+                    <li><a href="#sideorders">Sideorders</a></li>
+                    <li><a href="#dessert">Desserter</a></li>
+                    <li><a href="#drikkevarer">Drikkevarer</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav-bar slut-->
+
+
+    <!--   splash billede-->
+    <div class="container-fluid">
+        <div class="row">
+            <img class="col-xs-12 col-sm-12 col-md-12" src="test.png" alt="splash">
+        </div>
+    </div>
+
+
+    <!--  Forretter  -->
+    <div class="container">
+
+        <!--  Række 1-->
+        <div class="row">
+            <!-- Overskrift-->
+            <div class="col-md-12">
+                <h1 id="forret">Foretter</h1>
+            </div>
+
+            <!-- Produkt 1-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse hovereffect">
+                <img class="forret_billede" src="images/small/ringbroed-druer-sm.jpg" alt="ringbrød">
+                <p>Russisk ringbrød af Karapatisk mel</p>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Se mere</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Russisk ringbrød</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/small/ringbroed-druer-sm.jpg" alt="ringbrød">
+                                <p class="p_modal">Oprindelsesland: Karapatien
+                                    <br>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                                <h3>Pris: 39 kr</h3>
+                                <p class="p_modal">Status: til salg </p>
+                                <p class="p_modal">Rabat: 50% </p>
+                                <p class="p_modal">Særlige bemærkninger:</p>
+                                <!--                                Nedenstående, skal varieres for hvilken ret der er tale om-->
+                                <img class="veggie" src="vegetar.png" alt="vegetar">
+                                <img class="cow" src="cow.png" alt="cow">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default luk_knap" data-dismiss="modal">Luk</button>
+                                <button type="button" class="btn btn-primary bestil_knap">Bestil</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produkt 2-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/caviarbruschetta-sm.jpg" al>
+                <p>Brushcetta med russisk Caviar </p>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1"> Se mere</button>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel1">Brushcetta med rusisk Caviar</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/small/caviarbruschetta-sm.jpg">
+                                <p class="p_modal">Oprindelsesland: Sibirien
+                                    <br>Til denne dejlige Bruschetta anvender vi kun de dejligste sibiriske Caviar. Caviarerne presses ud af fiskene mens de stadig er levende, og vædes derefter i Putinka Vodka. Der er masser af bjerggedesmør på bruschettaene.</p>
+                                <h3>Pris: 49 kr</h3>
+                                <p class="p_modal">Status: til salg </p>
+                                <p class="p_modal">Vegetarret: nej</p>
+                                <p class="p_modal">Rabat: 0% </p>
+                                <p class="p_modal">Allergener: ingen</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default luk_knap" data-dismiss="modal">Luk</button>
+                                <button type="button" class="btn btn-primary bestil_knap">Bestil</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Produkt 3-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/baltiskbondesuppe-sm.jpg">
+                <p>Baltisk bondesuppe - en solid starter</p>
+                <button type="button"> Se mere</button>
+            </div>
+        </div>
+
+        <!-- Række 2 -->
+        <div class="row">
+            <!-- Produkt 4-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/kaalsuppe-sm.jpg">
+                <p>Kålsuppe med 7 kålvarianter</p>
+                <button type="button"> Se mere</button>
+            </div>
+            <!-- Produkt 5-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/rodbede-cabanossi-sm.jpg">
+                <p>Cabanossi med rødbedecreme og løg</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--   Hovedretter-->
+    <div class="container">
+        <div class="row">
+            <!-- Overskrift-->
+            <div class="col-md-12">
+                <h1 id="hovedret">Hovedretter</h1>
+            </div>
+
+            <!-- Produkt 1-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/bulgarskbondesuppe-sm.jpg">
+                <p>Cauceskus bulgarske bondesuppe</p>
+                <button type="button"> Se mere</button>
+
+            </div>
+
+            <!-- Produkt 2-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/mos-rogn-sm.jpg">
+                <p>Kæmpe klipfiskerogn med Kartofler og fiskefond </p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 3-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/boef-sm.jpg">
+                <p>Diplomat-bøf med grønt</p>
+                <button type="button"> Se mere</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Produkt 4-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/bondeplatte-sm.jpg">
+                <p>Zygroffs bondeplatte - bøndernes svar på Tapas</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 5-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/russisktapas-sm.jpg">
+                <p>Russisk tapas med tomater og kød</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 6-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/moldaviskfiskesuppe-sm.jpg">
+                <p>Den dejlige, alkoholholdige moldaviske fiskesuppe</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+        </div>
+
+        <!-- Produkt 7-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/dynryp-sm.jpg">
+                <p>Dynrup - Russisk bulgur med skovsvampe</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Sideorders-->
+    <div class="container">
+        <div class="row">
+
+            <!-- Overskrift-->
+            <div class="col-md-12">
+                <h1 id="sideorders">Sideorders</h1>
+            </div>
+
+            <div class="row">
+                <!-- Produkt 1-->
+                <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                    <img class="forret_billede" src="images/small/ringbroed-sm.jpg">
+                    <p>Russisk ringbrød bagt med det fineste gryzni-mel fra Gryzkigistan</p>
+                    <button type="button"> Se mere</button>
+                </div>
+
+                <!-- Produkt 2-->
+                <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                    <img class="forret_billede" src="images/small/bondeboller-sm.jpg">
+                    <p>Murmanske bondeboller bagt i stenovn</p>
+                    <button type="button"> Se mere</button>
+                </div>
+
+                <!-- Produkt 3-->
+                <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                    <img class="forret_billede" src="images/small/russisksalat-sm.jpg">
+                    <p>Russisk salat med ærter, bønner, gulerødder og mayonnaise fra Volgograd</p>
+                    <button type="button"> Se mere</button>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!-- Produkt 4-->
+                <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                    <img class="forret_billede" src="images/small/kartofler-sm.jpg">
+                    <p>Kogte kartofler med Murmanske krydderurter</p>
+                    <button type="button"> Se mere</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Dessert-->
+    <div class="container">
+        <div class="row">
+            <!-- Overskrift-->
+            <div class="col-md-12">
+                <h1 id="dessert">Desserter</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Produkt 1-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/kaviarpandekager-sm.jpg">
+                <p>Brændte pandekager med Bordyriske ørne-kaviar</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 2-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/guzni-sm.jpg">
+                <p>Guzni - Rødbede/nøddeis </p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 3-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/kirgisiskroulade-sm.jpg">
+                <p>Kirgisisk roulade bestående af nødder og rødkål</p>
+                <button type="button"> Se mere</button>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- Produkt 4-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/pavlova-sm.jpg">
+                <p>Pavlova - russiske pandekager - i honningmelon fra Nordkorea</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 5-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/groggiroshorn-sm.jpg">
+                <p>Groggishorn - det russiske svar på pølsehorn</p>
+                <button type="button"> Se mere</button>
+            </div>
+
+            <!-- Produkt 6-->
+            <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                <img class="forret_billede" src="images/small/syltedeloeg-sm.jpg">
+                <p>En lækker potpourri af søde, syltede løg</p>
+                <button type="button"> Se mere</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Drikkevarer-->
+    <div class="container">
+        <div class="row">
+            <!-- Overskrift-->
+            <div class="col-md-12">
+                <h1 id="drikkevarer">Drikkevarer</h1>
+
+                <div class="row">
+
+                    <!-- Produkt 1-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                        <img class="forret_billede" src="images/small/bochkarev-sm.jpg">
+                        <p>En halv liter Bochkarev fadøl</p>
+                        <button type="button"> Se mere</button>
+                    </div>
+
+                    <!-- Produkt 2-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                        <img class="forret_billede" src="images/small/voda-sm.jpg">
+                        <p>Voda-vodka - vodka i rigelige mængder</p>
+                        <button type="button"> Se mere</button>
+                    </div>
+
+                    <!-- Produkt 3-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                        <img class="forret_billede" src="images/small/cola-sm.jpg">
+                        <p>Gloske - russisk for Cola - fra bryggeriet Iznogoud</p>
+                        <button type="button"> Se mere</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Produkt 4-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                        <img class="forret_billede" src="images/small/roedvin-sm.jpg">
+                        <p>Et glas god Rødvin fra det tidligere USSR</p>
+                        <button type="button"> Se mere</button>
+                    </div>
+                    <!-- Produkt 5-->
+                    <div class="col-xs-12 col-sm-4 col-md-4 kasse">
+                        <img class="forret_billede" src="images/small/hvidvin-sm.jpg">
+                        <p>Et glas russisk hvidvin fra Chernobyl</p>
+                        <button type="button"> Se mere</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <img class="footer_img" src="restaurants-icon-png.png ">
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js "></script>
+    <script src="bootstrap.min.js "></script>
+    <script src="script.js "></script>
+</body>
+
+</html>
