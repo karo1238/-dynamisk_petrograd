@@ -62,11 +62,21 @@
             </div>
 
             <!-- Produkt 1-->
-            <div class="col-xs-12 col-sm-4 col-md-4 kasse hovereffect">
-                <img class="forret_billede" src="images/small/ringbroed-druer-sm.jpg" alt="ringbrød">
-                <p>Russisk ringbrød af Karapatisk mel</p>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Se mere</button>
-            </div>
+            <template id="produkt_template">
+                <div class="col-xs-12 col-sm-4 col-md-4 kasse hovereffect">
+                    <img class="forret_billede data_billede" src="images/small/ringbroed-druer-sm.jpg" alt="ringbrød">
+                    <p class="data_navn">DATA_NAVN</p>
+                    <h4 class="pris">Pris <span class="data_pris">DATA_PRIS</span> ,-</h4>
+                    <!--TO DO : sæt udsolgt class ved udsolgt
+                sæt rabat class ved rabat-->
+                    <h4 class="rabatpris">Rabat-pris <span class="data_rabat">DATA_RABAT</span>,-</h4>
+                    <!-- skal kun vises ved rabat -->
+
+                    <!--  Udsolgttekst vises kun hvis retten er udsolgt -->
+                    <h4 class="udsolgttekst"> Denne ret er desværre udsolgt </h4>
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Se mere</button>
+                </div>
+            </template>
 
             <!-- Produkt 2-->
             <div class="col-xs-12 col-sm-4 col-md-4 kasse">
