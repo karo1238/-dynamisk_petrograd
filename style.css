@@ -122,3 +122,12 @@ h3 {
 .cow {
     width: 20%;
 }
+
+.udsolgt,
+.rabat {
+    text-decoration: line-through;
+}
+
+.kasse {
+    min-height: 400px;
+}
